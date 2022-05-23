@@ -1,0 +1,425 @@
+/* Global rules */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Frontpage */
+
+#frontpage-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background-color: #ffd60a;
+
+}
+
+.frontpage-content-container {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+}
+
+.frontpage-content-left {
+    width: 20%;
+    height: 100%;
+}
+
+.frontpage-content-center {
+    width: 60%;
+    height: 100%;
+
+}
+
+.frontpage-content-right{
+    width: 20%;
+    height: 100%;
+
+}
+
+
+
+/* Frontpage left container */
+
+.leftLinks {
+    background-color: #003399;
+    color: #ffcc00;
+    font-size: 1.3rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 4px;
+    width: 95%;
+    padding: 10px 5px;
+
+
+}
+
+.leftLinks:hover {
+    background-color: #0547cd;
+
+}
+
+/* Frontpage top center container */
+
+.frontpage-card-container {
+    height: 45%;
+    display: flex;
+    justify-content:center;
+}
+
+.frontpage-center-content{
+    border-top: 4px solid #0547cd;
+    height: 55%;
+    background-color:rgba(0, 0, 0, 0.066);
+}
+
+.frontpage-card {
+   
+    min-height:245px;
+    min-width: 150px;
+    width: 25%;
+    border-radius: 10px;
+    margin: 5px 5px 5px 5px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+
+/* Frontpage cards */
+
+.fc0{
+    background-image: url(../images/cardBack1.webp);
+    background-size: cover;
+
+}
+
+.fc1{
+    background-image: url(../images/cardBack4.avif);
+    background-size: cover;
+}
+
+.fc2{
+    background-image: url(../images/cardback3.avif);
+    background-size: cover;
+
+}
+
+.fc3{
+    background-image: url(../images/cardback2.avif);
+    background-size: cover;
+}
+
+.card-title{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bolder;
+    border-radius: 10px;
+    border: 4px solid white;
+
+
+
+}
+
+.cardTxt {
+    color: #003399;
+    background-color: #ffcc00;
+    border: 4px solid #003399;
+    padding: 5px;
+    font-size:1.4rem;
+    width:90%;
+    text-align:center;
+    border-radius: 10px;
+
+
+
+
+}
+
+.card-title:hover > .cardTxt {
+    color: #ffcc00;
+    background-color: #003399;
+}
+
+.card-title:hover{
+    border: 4px solid #003399;
+
+}
+
+
+/* Frontpage bottom center */
+
+.pageLink {
+    padding: 7px 9px;
+    display: inline-block;
+    margin: 10px 5px;
+    font-size: 1.4rem;
+    color: #0547cd;
+    font-weight: bold;
+    background-color: #ffcc00;
+}
+
+.pageLink:hover {
+    background-color: #0547cd;
+    color: #ffcc00;
+}
+
+.varehus-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+justify-content: space-between;
+}
+.varehus {
+    width: 33%;
+    height: 95%;
+    margin-top: 10px;
+}
+
+.husene {
+    width: 100%;
+    height: 90%;
+    background-color: red;
+    overflow:scroll;
+}
+
+.infoen {
+    width: 100%;
+    height: 90%;
+    background-color: #ffcc00;
+}
+
+.infoen h3 {
+    font-size:2.5rem;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+#adress {
+    margin-left: 12px;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+}
+
+.infoen p {
+    margin-left: 12px;
+    margin-bottom: 3px;
+
+}
+
+.vhLink {
+    margin-left: 12px;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #0547cd;
+    color: #ffd60a;
+    padding: 5px;
+
+}
+
+.vhLink:hover {
+    text-decoration:underline;
+}
+
+.vhinfo{
+    width: 65%;
+    height: 95%;
+    margin-top: 10px;
+}
+
+
+
+.vhtitle {
+    background-color: #003399;
+    color: #ffcc00;
+    text-align: center;
+    height: 10%;
+    font-size:1.3rem;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.vhItem {
+    display: block;
+    height: 45px;
+    width: 100%;
+    background-color: #0547cd;
+    color: #ffcc00;
+    line-height:45px;
+    padding: 0 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+}
+
+.vhItem:hover {
+    background-color: #003399;
+}
+
+/* Frontpage right container */
+
+.frontpage-content-right {
+    overflow:scroll;
+    
+}
+
+.title-right {
+    color: #ffcc00;
+    background-color: #003399;
+    height:fit-content;
+    padding: 10px 5px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 4px;
+    width: 95%;
+    float: right;
+}
+
+#appliance-input {
+    font-size: 1.3rem;
+    font-weight: bold;
+    height: 50px;
+    padding-left: 10px;
+    width:95%;
+    margin-right: 4px;
+    float: right;
+
+}
+
+.itemList {
+    float: right;
+    margin-right: 4px;
+    width: 95%;
+    height: fit-content;
+    background-color:#ffcc00;
+}
+
+.applianceLink {
+    margin-bottom: 1px;
+    background-color: #003399;
+    padding: 15px 5px;
+    display: block;
+    font-size: 1.1rem;
+   color: #ffcc00;
+   font-weight: bold;
+}
+
+.applianceLink:hover {
+    background-color: #0547cd;
+
+}
+
+
+.prodShow {
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+
+}
+
+.produsent {
+    background-color: #003399;
+    color: #ffcc00;
+    padding: 5px;
+    width: 95%;
+}
+
+.nummer, .epost {
+    background-color: #003399;
+    color: #ffcc00;
+    padding: 5px;
+    width: 80%;
+    display: inline-block;
+}
+
+.copyTlf, .copyEpost {
+    display: inline-block;
+    width: 15%;
+    height: 30px;
+}
+
+.copyTlf:hover, .copyEpost:hover {
+    cursor: pointer;
+}
+
+.nrnr {
+    width: 100%;
+    display: flex;
+    align-items:center;
+}
+
+.smsCopy, .webLink {
+    display: inline-block;
+    padding: 5px;
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+    margin: 0 5px;
+}
+
+.smsCopy:hover, .webLink:hover {
+    color: white;
+    background-color: black;
+}
+
+
+
+.prodImg{
+    height: 180px;
+    width: 95%;
+    margin-top: 8px;
+}
+
+.underline {
+    text-decoration:underline;
+}
+
+#prodName {
+    background-color: white;
+    width: 95%;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.produsent {
+    margin-top:5px;
+}
+
+.hehe {
+    margin-bottom: 1px;
+    background-color: #003399;
+    padding: 15px 5px;
+    display: block;
+    font-size: 1.1rem;
+
+}
+
+.nrnr {
+    padding: 5px 0;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+
